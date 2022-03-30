@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<script>
+    function habilitar() {
+        var estado = document.querySelector('#estado');
+        var index = estado.selectedIndex;
+        if (index != 0) {
+            document.querySelector('#cidade').disabled = false;
+        } else {
+            document.querySelector('#cidade').value = "";
+            document.querySelector('#cidade').disabled = true;
+        }
+    }
+
+    function enviar() {
+        var enviar = document.querySelector('#termos');
+        if (enviar.checked) {
+            document.querySelector('#btnEnviar').disabled = false;
+        } else {
+            document.querySelector('#btnEnviar').disabled = true;
+        }
+    }
+</script>
+
+<style>
+    #obr {
+        color: red;
+    }
+</style>
+
+<body>
+    <h1>Cadastro de candidato:</h1>
+    <hr>
+    <form action="ex2.php" method="post" name="form">
+        <label id="obr">*</label>Nome: <input type="text" name="txtNome" placeholder="Ex: José da Silva Pereira">
+        <br><label id="obr">*</label>E-mail: <input type="text" name="txtEmail" placeholder="Ex: silva.jose@mail.com">
+        <br><label id="obr">*</label>Sexo:
+        <input type="radio" name="optSexo" value="Masculino"> Masculino
+        <input type="radio" name="optSexo" value="Feminino"> Feminino
+        <input type="radio" name="optSexo" value="Outro"> Outro
+
+        <br><br><label id="obr">*</label>Estado: <select id="estado" name="selEstado" onchange="habilitar()">
+            <option>Selecionar...</option>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Distrito Federal</option>
+            <option>Espírito Santo</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Minas Gerais</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Paraná</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>São Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+        </select>
+        <br><label id="obr">*</label>Cidade: <input id="cidade" type="text" name="txtCidade" disabled>
+
+        <br><br> Mensagem (ajuda na seleção do candidato):
+        <br><textarea name="txtMessage" placeholder="Mensagem..." style="height: 200px; width: 400px;" maxlength="500px"></textarea>
+
+        <br><br><label id="obr">*</label><input id="termos" type="checkbox" name="chkTermos" onclick="enviar()"> Li e aceito os <a href="termos.htm">Termos de Privacidade</a>, e concordo com o uso de minhas informações por parte da empresa, somente e
+        inteiramente para minha experiência neste serviço.
+        <br><input type="checkbox" name="chkNoticias" checked> Aceito receber todas as novidades e notícias sobre o sertviço em meu e-mail.
+
+
+        <br><br><input id="btnEnviar" type="submit" value="Enviar" disabled>
+
+        <br><br>
+        <p style="font-size: 12px;"><span id="obr">*</span> Campos obrigatórios</p>
+</body>
+
+</html>
