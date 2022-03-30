@@ -1,9 +1,18 @@
 <?php
-    for($i=0;$i<200;$i++) {
+    $cont=0;
+
+    for($i=1;$i<200;$i++) {
         for($j=1;$j<$i;$j++){
+
             if($i%$j==0) {
-                echo $i."<br>";
+                $cont++;
             }
+
         }
+        if($cont==1) {
+            echo $i."<br>";
+        }
+
+        $cont=0;
     }
 ?>
