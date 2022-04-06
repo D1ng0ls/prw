@@ -14,7 +14,7 @@
     </form>
 </body>
 <?php
-    $nome = $_POST["txtNome"];
+    $nome = $_POST["txtNome"]; 
     $horario = $_POST["txtHora"];
     $horario = substr($horario,0,2);
 
