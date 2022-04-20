@@ -21,9 +21,15 @@ form {
 .inpTxt {
     float: left;
     width: 200px;
-    height: 17px;
+    height: 18px;
+    vertical-align: middle;
     border: none;
     border-radius: 5px;
+}
+
+.inpTxt:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .inpTel {
@@ -37,7 +43,7 @@ form {
     border-radius: 5px;
     font-size: 1em;
     color: white;
-    background-color: rgb(148, 147, 147);
+    background-color: rgb(119, 117, 117);
 }
 
 .btnEnviar:hover {
