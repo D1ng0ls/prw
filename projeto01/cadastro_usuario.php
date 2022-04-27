@@ -12,8 +12,8 @@
 
     $result = mysqli_query($con, $sql);
     if ($result) {
-        echo "Dados inseridos com sucesso!";
+        echo "<br><br>Dados inseridos com sucesso!";
     } else {
-        echo "Erro ao inserir a banco de dados: ".mysqli_error($con);
+        echo "<br><br>Erro ao inserir a banco de dados: ".mysqli_error($con);
     }
 ?>
