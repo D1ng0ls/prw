@@ -17,3 +17,4 @@
         echo "<br><br>Erro ao inserir a banco de dados: ".mysqli_error($con);
     }
 ?>
+<br><a href="index.html">Voltar</a>

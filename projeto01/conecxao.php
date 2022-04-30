@@ -1,6 +1,6 @@
 <?php 
     $hostname= "localhost";
-    $port = 3307;
+    $port = 3306; //3306 - home / 3307 - school
     $username = "root";
     $password = "";
     $database = "projeto01";

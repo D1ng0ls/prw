@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     display: block;
-    background-color: rgb(160, 160, 160);
+    background-color: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -17,7 +17,7 @@ body {
     align-items: center;
 }
 
-.btn button{
+.btn button {
     width: 200px;
     height: 60px;
     margin: 10px;
@@ -29,24 +29,18 @@ body {
     cursor: pointer;
 }
 
-.btn1 button{
+.btn1 button {
     background-color: rgb(132, 206, 255);
 }
-.btn2 button{
+
+.btn2 button {
     background-color: rgb(255, 69, 45);
 }
 
-.btn3 button{
-    background-color: rgb(255, 181, 45);
-}
-
-.btn1 button:hover{
+.btn1 button:hover {
     background-color: rgb(102, 176, 225);
 }
 
-.btn2 button:hover{
+.btn2 button:hover {
     background-color: rgb(225, 69, 45);
-}
-.btn3 button:hover{
-    background-color: rgb(225, 151, 45);
 }

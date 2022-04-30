@@ -10,11 +10,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="cadastro_usuario.css">
+    <link rel="stylesheet" type="text/css" href="altera_usuario.css">
     <title>Cadastro de usuários</title>
 </head>
 <body>
-    <form action="cadastro_usuario.php" method="post">
+    <form action="altera_usuario_exe.php" method="post">
         <table>
             <tr>
                 <th colspan="2">Cadastro de Clientes - IFSP</th>
@@ -35,10 +35,10 @@
                 value="<?php echo $row['telefone_usuario'] ?>"></td>
             </tr>
             <tr>
+                <<input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
                 <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>
             </tr>
         </table>   
-        
     </form>
 </body>
 </html>
