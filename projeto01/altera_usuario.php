@@ -35,7 +35,7 @@
                 value="<?php echo $row['telefone_usuario'] ?>"></td>
             </tr>
             <tr>
-                <<input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
+                <input type="hidden" name="id_usuario" value="<?php echo $row['id_usuario'] ?>">
                 <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>
             </tr>
         </table>   
