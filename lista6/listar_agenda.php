@@ -10,6 +10,17 @@
     <meta charset="UTF-8">
     <title>Listar usuário</title>
 </head>
+
+<style>
+    td {
+        padding: 5px;
+    }
+    #titulo {
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+</style>
+
 <body>
 <table align="center">
         <tr>
@@ -33,7 +44,7 @@
             while($row = mysqli_fetch_array($result)) {
                 echo "<tr>
                     <td>$row[id_agenda]</td>
-                    <td>$row[dt_cadastro]</td>
+                    <td>".implode("/",array_reverse(explode("-",$row['dt_cadastro'])))."</td>
                     <td><a href='altera_agenda.php?id_agenda=$row[id_agenda]'>$row[nome]</a></td>
                     <td>$row[apelido]</td>
                     <td>$row[telefone]</td>

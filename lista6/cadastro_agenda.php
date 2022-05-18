@@ -11,6 +11,7 @@ $cidade = $_POST['cidade'];
 $endereco = $_POST['endereco'];
 $bairro = $_POST['bairro'];
 $dt_cadastro = date("Y-m-d");
+$data = implode("/",array_reverse(explode("-",$dt_cadastro)));
 
 echo "Nome: $nome
 <br>Apelido: $apelido
@@ -21,7 +22,7 @@ echo "Nome: $nome
 <br>Cidade: $cidade
 <br>Endereco: $endereco
 <br>Bairro: $bairro
-<br>Data: $dt_cadastro";
+<br>Data: $data";
 
 $sql = "INSERT INTO agenda (nome, apelido, telefone, celular, email, estado, cidade, endereco, bairro, dt_cadastro)
         VALUES ('$nome', '$apelido', '$telefone', '$celular', '$email', '$estado', '$cidade', '$endereco', '$bairro', '$dt_cadastro')";

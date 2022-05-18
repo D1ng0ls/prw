@@ -5,7 +5,7 @@
     <title>Sistema de cadastro e listagem de usuário</title>
 </head>
 <body>
-    <a href="cadastro_agenda.html"><button>Cadastrar usuário</button></a>
+    <a href="cadastro_agenda.html"><button>Cadastrar usuário</button></a><br><br>
     <a href="listar_agenda.php"><button>Listar usuário</button></a>
 </body>
 </html>
