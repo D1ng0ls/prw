@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Fluxo de Caixa</title>
+</head>
+
+<body>
+    <form action="cadastro_fluxo_caixa.php" method="post">
+        <table align="center">
+            <tr>
+                <th colspan="2" style="font-size: 1.5rem;">Cadastro de Fluxo de Caixa</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Data:</p>
+                </td>
+                <td><input type="date" name="data"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tipo:</p>
+                </td>
+                <td><input type="radio" name="tipo" value="Entrada" checked>Entrada <input type="radio" name="tipo" value="Saída">Saída</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Valor:</p>
+                </td>
+                <td><input type="number" name="valor"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Histórico:</p>
+                </td>
+                <td><input type="text" name="historico"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cheque:</p>
+                </td>
+                <td><select name="cheque">
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br><input type="submit" value="Enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
